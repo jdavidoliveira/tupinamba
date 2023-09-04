@@ -1,0 +1,48 @@
+@import '../../index.css';
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo {
+    font-family: var(--fonte1);
+    display: flex;
+    align-items: center ;
+    color: #000;
+}
+
+.nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav a {
+    font-size: 1rem;
+}
