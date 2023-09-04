@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
-import Logo from '../../assets/logo-black.svg'
+import Logo from '../assets/logo-black.svg'
 
 export default function Header() {
     return (
@@ -16,7 +15,7 @@ export default function Header() {
                     <Link to="/contato">Contato</Link>
                 </nav>
                 <button>
-                    Change  
+                    Change
                 </button>
             </div>
         </header>
