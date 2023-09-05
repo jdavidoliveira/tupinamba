@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 import styles from './Header.module.css'
 import Logo from '../assets/logo-black.svg'
 
 export default function Header() {
+    const [currentTheme, setCurrentTheme] = useState('light')
     return (
         <header className={styles.header}>
             <div className={styles.content}>
@@ -14,8 +16,8 @@ export default function Header() {
                     <Link to="/artistas">Artistas</Link>
                     <Link to="/contato">Contato</Link>
                 </nav>
-                <button>
-                    Change
+                <button className={styles.button} onClick={() => setCurrentTheme(currentTheme === 'light' ? 'dark' : 'light')}>
+                    {currentTheme === 'light' ? 'Dark' : 'Light'}
                 </button>
             </div>
         </header>
